@@ -56,8 +56,107 @@ class MyApp extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           height: double.infinity,
           width: double.infinity,
-          child: const Column(
-            children: [Row()],
+          child: Column(
+            // Full screen Column
+            children: [
+              Container(
+                // 16 C
+                width: double.infinity,
+                padding: const EdgeInsets.only(top: 140.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.only(left: 120.0),
+                      child: const Text(
+                        "16",
+                        style: TextStyle(fontSize: 100.0),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 15.0),
+                      child: const Text(
+                        "°C",
+                        style: TextStyle(fontSize: 30.0),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.ac_unit),
+                  Text(
+                    "  Cooling Mode",
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                ],
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 250.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.all(5.00),
+                      color: Colors.blueGrey,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.remove),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 70.0, vertical: 18.0),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(5.00),
+                      color: Colors.blueGrey,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.add),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 70.0, vertical: 18.0),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                      margin: const EdgeInsets.all(5.00),
+                      color: Colors.blueGrey,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.alarm),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 40.0, vertical: 18.0),
+                      )),
+                  Container(
+                      margin: const EdgeInsets.all(5.00),
+                      color: Colors.blueGrey,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.ac_unit_sharp),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 40.0, vertical: 18.0),
+                      )),
+                  Container(
+                      margin: const EdgeInsets.all(5.00),
+                      color: Colors.blueGrey,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.wind_power_sharp),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 40.0, vertical: 18.0),
+                      )),
+                ],
+              )
+            ],
           ),
         ),
       ),
