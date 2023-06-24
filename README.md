@@ -1,7 +1,9 @@
 # flutter_ui_design
 
-A new Flutter project.
+Flutter project.
 
 ## Task
+
+- Design the following interfaces <br/>
 
 <img src="assets/task.jpg"/>
